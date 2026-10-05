@@ -240,8 +240,8 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
           ? 'Bagaimana aturan dan perhitungan biaya jika acara melebihi durasi (Overtime)?'
           : 'How is overtime calculated if the event runs longer?',
         a: isId
-          ? '• Biaya overtime dikenakan flat sebesar Rp 200.000 / jam (dihitung per jam liputan acara, bukan dikali jumlah crew).\n• Contoh: Jika kamu mengambil paket Foto + Video (2 crew) dan overtime 1 jam, biayanya tetap Rp 200.000.'
-          : '• Overtime fee is flat at Rp 200,000 / hour (charged per extra hour, NOT per crew member).',
+          ? '• Biaya overtime dikenakan flat sebesar Rp 220.000 / jam (dihitung per jam liputan acara, bukan dikali jumlah crew).\n• Contoh: Jika kamu mengambil paket Foto + Video (2 crew) dan overtime 1 jam, biayanya tetap Rp 220.000.'
+          : '• Overtime fee is flat at Rp 220,000 / hour (charged per extra hour, NOT per crew member).',
       },
       {
         q: isId
@@ -516,7 +516,7 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
           <>
             <PriceCard
               title={isId ? 'Foto Saja (1 Jam)' : 'Photo Only (1 Hour)'}
-              price={currency === 'IDR' ? 'Rp 450.000' : '$30'}
+              price={currency === 'IDR' ? 'Rp 495.000' : '$33'}
               ctaText={content.ctaBtn}
               outputs={
                 isId
@@ -531,7 +531,7 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
             />
             <PriceCard
               title={isId ? 'Video Saja (1 Jam)' : 'Video Only (1 Hour)'}
-              price={currency === 'IDR' ? 'Rp 850.000' : '$55'}
+              price={currency === 'IDR' ? 'Rp 935.000' : '$61'}
               ctaText={content.ctaBtn}
               outputs={
                 isId
@@ -546,8 +546,8 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
             />
             <PriceCard
               title={isId ? 'Bundling Foto + Video (1 Jam)' : 'Photo + Video Bundle (1 Hour)'}
-              anchorPrice={currency === 'IDR' ? 'Rp 1.300.000' : '$85'}
-              price={currency === 'IDR' ? 'Rp 1.000.000' : '$65'}
+              anchorPrice={currency === 'IDR' ? 'Rp 1.430.000' : '$94'}
+              price={currency === 'IDR' ? 'Rp 1.100.000' : '$72'}
               badge={isId ? 'Paling Laris (Best Value)' : 'Best Value'}
               ctaText={content.ctaBtn}
               outputs={
@@ -583,12 +583,12 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
           <>
             <PriceCard
               title={isId ? 'Foto Saja' : 'Photo Only'}
-              price={currency === 'IDR' ? 'Mulai Rp 150.000' : 'From $10'}
+              price={currency === 'IDR' ? 'Mulai Rp 165.000' : 'From $11'}
               ctaText={content.ctaBtn}
               outputs={[
-                '30 Mins: Rp 150.000 ($10)',
-                '45 Mins: Rp 225.000 ($15)',
-                '1 Hour (Best Value): Rp 250.000 ($18)',
+                '30 Mins: Rp 165.000 ($11)',
+                '45 Mins: Rp 248.000 ($17)',
+                '1 Hour (Best Value): Rp 275.000 ($20)',
                 isId ? 'Semua Foto Original JPG Dikirimkan' : 'All Original JPG Photos Delivered',
               ]}
               ctaLink={getWaLink(
@@ -599,12 +599,12 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
             />
             <PriceCard
               title={isId ? 'Video Saja' : 'Video Only'}
-              price={currency === 'IDR' ? 'Mulai Rp 200.000' : 'From $14'}
+              price={currency === 'IDR' ? 'Mulai Rp 220.000' : 'From $15.50'}
               ctaText={content.ctaBtn}
               outputs={[
-                '30 Mins: Rp 200.000 ($14)',
-                '45 Mins: Rp 310.000 ($21)',
-                '1 Hour (Best Value): Rp 350.000 ($24)',
+                '30 Mins: Rp 220.000 ($15.50)',
+                '45 Mins: Rp 341.000 ($23)',
+                '1 Hour (Best Value): Rp 385.000 ($26.50)',
                 isId ? 'Output: 1 Video Dokumentasi / Short Reels' : 'Output: 1 Short Doc / Reels Video',
               ]}
               ctaLink={getWaLink(
@@ -615,8 +615,8 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
             />
             <PriceCard
               title={isId ? 'Bundling Foto + Video (1 Jam)' : 'Photo + Video Bundle (1 Hour)'}
-              anchorPrice={currency === 'IDR' ? 'Rp 600.000' : '$42'}
-              price={currency === 'IDR' ? 'Rp 450.000' : '$30'}
+              anchorPrice={currency === 'IDR' ? 'Rp 660.000' : '$46'}
+              price={currency === 'IDR' ? 'Rp 495.000' : '$33'}
               badge={isId ? 'Paling Hemat' : 'Best Value'}
               ctaText={content.ctaBtn}
               outputs={
@@ -715,12 +715,12 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
           <>
             <PriceCard
               title={isId ? 'Foto Event' : 'Event Photography'}
-              price={currency === 'IDR' ? 'Mulai Rp 1.500.000' : 'From $100'}
+              price={currency === 'IDR' ? 'Mulai Rp 1.650.000' : 'From $110'}
               ctaText={content.ctaBtn}
               outputs={[
-                'Half Day (4 Hours): Rp 1.500.000 ($100)',
-                'Full Day (8 Hours): Rp 3.000.000 ($200)',
-                isId ? 'Overtime: Rp 200.000 / Jam' : 'Overtime: Rp 200.000 / Hour',
+                'Half Day (4 Hours): Rp 1.650.000 ($110)',
+                'Full Day (8 Hours): Rp 3.300.000 ($220)',
+                isId ? 'Overtime: Rp 220.000 / Jam' : 'Overtime: Rp 220.000 / Hour',
                 isId ? 'Semua Hasil Foto Asli (JPG)' : 'All Original Photo Files (JPG)',
               ]}
               ctaLink={getWaLink(
@@ -731,12 +731,12 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
             />
             <PriceCard
               title={isId ? 'Video Event' : 'Event Videography'}
-              price={currency === 'IDR' ? 'Mulai Rp 2.000.000' : 'From $135'}
+              price={currency === 'IDR' ? 'Mulai Rp 2.200.000' : 'From $148'}
               ctaText={content.ctaBtn}
               outputs={[
-                'Half Day (4 Hours): Rp 2.000.000 ($135)',
-                'Full Day (8 Hours): Rp 4.000.000 ($270)',
-                isId ? 'Overtime: Rp 200.000 / Jam' : 'Overtime: Rp 200.000 / Hour',
+                'Half Day (4 Hours): Rp 2.200.000 ($148)',
+                'Full Day (8 Hours): Rp 4.400.000 ($297)',
+                isId ? 'Overtime: Rp 220.000 / Jam' : 'Overtime: Rp 220.000 / Hour',
                 '+ Add-on Drone Neo 2: Rp 399.000 ($27)',
               ]}
               ctaLink={getWaLink(
@@ -747,14 +747,14 @@ export const PricelistSection: React.FC<PricelistSectionProps> = ({ locale = 'id
             />
             <PriceCard
               title={isId ? 'Foto + Video Event' : 'Event Photo + Video'}
-              anchorPrice={currency === 'IDR' ? 'Rp 7.000.000 (Full Day)' : '$470'}
-              price={currency === 'IDR' ? 'Mulai Rp 3.500.000' : 'From $235'}
+              anchorPrice={currency === 'IDR' ? 'Rp 7.700.000 (Full Day)' : '$517'}
+              price={currency === 'IDR' ? 'Mulai Rp 3.850.000' : 'From $258.50'}
               badge={isId ? 'Tim Lengkap' : 'Full Crew'}
               ctaText={content.ctaBtn}
               outputs={[
-                'Half Day (4 Hours): Rp 3.500.000 ($235)',
-                'Full Day (8 Hours): Rp 6.500.000 ($435)',
-                isId ? 'Overtime: Rp 200.000 / Jam (Flat Tim)' : 'Overtime: Rp 200.000 / Hour (Flat Team)',
+                'Half Day (4 Hours): Rp 3.850.000 ($258.50)',
+                'Full Day (8 Hours): Rp 7.150.000 ($478.50)',
+                isId ? 'Overtime: Rp 220.000 / Jam (Flat Tim)' : 'Overtime: Rp 220.000 / Hour (Flat Team)',
                 '+ Add-on Drone Neo 2: Rp 399.000 ($27)',
                 isId ? 'Jaminan Tim & Backup Peralatan Professional' : 'Professional Team & Equipment Backup Guarantee',
               ]}
